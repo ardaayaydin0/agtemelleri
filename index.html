@@ -1,0 +1,555 @@
+-<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>40 Soruluk Ağ Testi</title>
+  <style>
+    body{font-family: Arial, Helvetica, sans-serif; max-width:980px; margin:20px auto; padding:20px}
+    h1{font-size:1.6rem}
+    .question{border-bottom:1px solid #e0e0e0; padding:12px 0}
+    .opts{margin-top:6px}
+    label{display:block; margin:6px 0}
+    .result{font-weight:700; margin-left:10px}
+    .correct{color:green}
+    .wrong{color:red}
+    .summary{margin-top:20px; font-size:1.1rem}
+    .btn{display:inline-block; padding:10px 16px; background:#1976d2; color:white; border:none; border-radius:6px; cursor:pointer}
+    .footer{margin-top:16px;}
+  </style>
+</head>
+<body>
+  <h1>40 Soruluk Ağ Testi - Arda Ayaydın</h1>
+  <p>"Kontrol Et" düğmesine basmanız yeterli.İyi çalışmalar arkadaşlar</p>
+
+  <form id="quiz">
+
+<!-- Sorular -->
+
+<!-- 1 -->
+<div class="question" data-answer="A" id="q1">
+  <div><strong>1.</strong> Hub ile switch arasındaki temel fark nedir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q1" value="A"> Hub veriyi tüm portlara gönderir; switch ise sadece hedef porta gönderir.</label>
+    <label><input type="radio" name="q1" value="B"> Hub paketleri filtreler; switch ise her paketi yayınlar.</label>
+    <label><input type="radio" name="q1" value="C"> Hub daha akıllıdır; switch daha yavaştır.</label>
+    <label><input type="radio" name="q1" value="D"> Hub yalnızca fiber destekler; switch sadece koaksiyel.</label>
+    <span class="result" aria-live="polite"></span>
+  </div>
+</div>
+
+<!-- 2 -->
+<div class="question" data-answer="B" id="q2">
+  <div><strong>2.</strong> Aşağıdaki topolojilerden hangisi cihazların merkezdeki bir cihaza bağlandığı yapıdır?</div>
+  <div class="opts">
+    <label><input type="radio" name="q2" value="A"> Bus</label>
+    <label><input type="radio" name="q2" value="B"> Star (Yıldız)</label>
+    <label><input type="radio" name="q2" value="C"> Ring (Halka)</label>
+    <label><input type="radio" name="q2" value="D"> Mesh</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 3 -->
+<div class="question" data-answer="C" id="q3">
+  <div><strong>3.</strong> Bus (veriyolu) topolojisinin temel özelliği nedir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q3" value="A"> Her cihazın merkezi bir yönlendiriciye kabloyla bağlanması.</label>
+    <label><input type="radio" name="q3" value="B"> Cihazların halka şeklinde birbirine bağlanması.</label>
+    <label><input type="radio" name="q3" value="C"> Tüm cihazların tek bir ortak kabloya bağlı olması.</label>
+    <label><input type="radio" name="q3" value="D"> Cihazların her biri diğer tüm cihazlarla doğrudan bağlıdır.</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 4 -->
+<div class="question" data-answer="A" id="q4">
+  <div><strong>4.</strong> Ring (halka) topolojisinin dezavantajlarından biri nedir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q4" value="A"> Bir cihaz arızalanırsa tüm halka etkilenebilir.</label>
+    <label><input type="radio" name="q4" value="B"> Kurulumu en kolay topolojidir.</label>
+    <label><input type="radio" name="q4" value="C"> Veri aynı anda tüm portlara gönderilir.</label>
+    <label><input type="radio" name="q4" value="D"> Her cihaz merkeze bağlıdır.</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 5 -->
+<div class="question" data-answer="A" id="q5">
+  <div><strong>5.</strong> Yıldız topolojisinin bir avantajı nedir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q5" value="A"> Bir bilgisayar bozulsa tüm ağ durmaz.</label>
+    <label><input type="radio" name="q5" value="B"> Kablolama en azdır.</label>
+    <label><input type="radio" name="q5" value="C"> Her bağlantı pahalıdır.</label>
+    <label><input type="radio" name="q5" value="D"> Ring protokollerini zorunlu kılar.</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="question" data-answer="C" id="q6">
+  <div><strong>6.</strong> 568B renk sıralamasında ikinci tel hangi renktir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q6" value="A"> Beyaz/Yeşil</label>
+    <label><input type="radio" name="q6" value="B"> Mavi</label>
+    <label><input type="radio" name="q6" value="C"> Turuncu</label>
+    <label><input type="radio" name="q6" value="D"> Kahverengi</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 7 -->
+<div class="question" data-answer="A" id="q7">
+  <div><strong>7.</strong> RJ-45 konnektör kaç pinlidir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q7" value="A"> 8</label>
+    <label><input type="radio" name="q7" value="B"> 4</label>
+    <label><input type="radio" name="q7" value="C"> 6</label>
+    <label><input type="radio" name="q7" value="D"> 10</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 8 -->
+<div class="question" data-answer="B" id="q8">
+  <div><strong>8.</strong> UTP ile STP arasındaki temel fark nedir (detay gerekmiyor)?</div>
+  <div class="opts">
+    <label><input type="radio" name="q8" value="A"> UTP folyo korumalıdır; STP korumasızdır.</label>
+    <label><input type="radio" name="q8" value="B"> STP parazitlere karşı korumalıdır; UTP korumasızdır.</label>
+    <label><input type="radio" name="q8" value="C"> UTP fiber optiktir; STP bakırdır.</label>
+    <label><input type="radio" name="q8" value="D"> STP yalnızca koaksiyel kablodur.</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 9 -->
+<div class="question" data-answer="D" id="q9">
+  <div><strong>9.</strong> Fiber kablonun en belirgin avantajı hangisidir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q9" value="A"> Ucuz olması</label>
+    <label><input type="radio" name="q9" value="B"> Manyetik parazitlere hassas olması</label>
+    <label><input type="radio" name="q9" value="C"> Sadece kısa mesafe için uygun olması</label>
+    <label><input type="radio" name="q9" value="D"> Işık ile çok hızlı veri iletimi ve uzun mesafe uygunluğu</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 10 -->
+<div class="question" data-answer="C" id="q10">
+  <div><strong>10.</strong> Koaksiyel kablo genellikle hangi amaçla kullanılmıştır?</div>
+  <div class="opts">
+    <label><input type="radio" name="q10" value="A"> Modern fiber omurga için</label>
+    <label><input type="radio" name="q10" value="B"> Yalnızca telefon hatları için</label>
+    <label><input type="radio" name="q10" value="C"> TV ve eski ağ sistemlerinde</label>
+    <label><input type="radio" name="q10" value="D"> RJ-45 yerine kullanmak için</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 11 -->
+<div class="question" data-answer="B" id="q11">
+  <div><strong>11.</strong> UTP kablo içinde kaç adet bükümlü tel çifti bulunur?</div>
+  <div class="opts">
+    <label><input type="radio" name="q11" value="A"> 2 çift</label>
+    <label><input type="radio" name="q11" value="B"> 4 çift</label>
+    <label><input type="radio" name="q11" value="C"> 6 çift</label>
+    <label><input type="radio" name="q11" value="D"> 8 çift</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 12 -->
+<div class="question" data-answer="D" id="q12">
+  <div><strong>12.</strong> UTP kabloda bükümün amacı nedir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q12" value="A"> Estetik görünüm sağlamak</label>
+    <label><input type="radio" name="q12" value="B"> Kabloyu uzatmak</label>
+    <label><input type="radio" name="q12" value="C"> Sadece maliyeti azaltmak</label>
+    <label><input type="radio" name="q12" value="D"> Paraziti azaltmak için</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 13 -->
+<div class="question" data-answer="A" id="q13">
+  <div><strong>13.</strong> OSI modelinde en üstte hangi katman bulunur (7'den 1'e sıralamayla)?</div>
+  <div class="opts">
+    <label><input type="radio" name="q13" value="A"> Uygulama</label>
+    <label><input type="radio" name="q13" value="B"> Taşıma</label>
+    <label><input type="radio" name="q13" value="C"> Veri Bağı</label>
+    <label><input type="radio" name="q13" value="D"> Fiziksel</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 14 -->
+<div class="question" data-answer="D" id="q14">
+  <div><strong>14.</strong> OSI katmanlarının 7'den 1'e doğru sıralandığında hangisi en altta (fiziksel) katmandır?</div>
+  <div class="opts">
+    <label><input type="radio" name="q14" value="A"> Uygulama</label>
+    <label><input type="radio" name="q14" value="B"> Ağ</label>
+    <label><input type="radio" name="q14" value="C"> Taşıma</label>
+    <label><input type="radio" name="q14" value="D"> Fiziksel</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 15 -->
+<div class="question" data-answer="C" id="q15">
+  <div><strong>15.</strong> OSI modelindeki 'Ağ' katmanı hangi işlevi görür?</div>
+  <div class="opts">
+    <label><input type="radio" name="q15" value="A"> Uygulama verisini görüntüleme</label>
+    <label><input type="radio" name="q15" value="B"> Fiziksel kabloyu kontrol etme</label>
+    <label><input type="radio" name="q15" value="C"> IP yönlendirme ve paketleme</label>
+    <label><input type="radio" name="q15" value="D"> Veri linkini doğrulama</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 16 -->
+<div class="question" data-answer="B" id="q16">
+  <div><strong>16.</strong> IP adres sınıflarından C sınıfı hangi aralığı kapsar?</div>
+  <div class="opts">
+    <label><input type="radio" name="q16" value="A"> 0.0.0.0 - 127.255.255.255</label>
+    <label><input type="radio" name="q16" value="B"> 192.0.0.0 - 223.255.255.255</label>
+    <label><input type="radio" name="q16" value="C"> 128.0.0.0 - 191.255.255.255</label>
+    <label><input type="radio" name="q16" value="D"> 224.0.0.0 - 239.255.255.255</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 17 -->
+<div class="question" data-answer="A" id="q17">
+  <div><strong>17.</strong> C sınıfı için standart alt ağ maskesi hangisidir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q17" value="A"> 255.255.255.0</label>
+    <label><input type="radio" name="q17" value="B"> 255.255.0.0</label>
+    <label><input type="radio" name="q17" value="C"> 255.0.0.0</label>
+    <label><input type="radio" name="q17" value="D"> 255.255.255.255</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 18 -->
+<div class="question" data-answer="B" id="q18">
+  <div><strong>18.</strong> Aynı ağdaki C sınıfı bir ağ için örnek IP aralığı hangisidir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q18" value="A"> 10.0.0.1 - 10.0.0.254</label>
+    <label><input type="radio" name="q18" value="B"> 192.168.1.1 - 192.168.1.254</label>
+    <label><input type="radio" name="q18" value="C"> 172.16.0.1 - 172.31.255.254</label>
+    <label><input type="radio" name="q18" value="D"> 224.0.0.1 - 239.255.255.254</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 19 -->
+<div class="question" data-answer="C" id="q19">
+  <div><strong>19.</strong> 192.168.1.0/24 ağındaki broadcast (yayın) adresi nedir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q19" value="A"> 192.168.1.1</label>
+    <label><input type="radio" name="q19" value="B"> 192.168.1.254</label>
+    <label><input type="radio" name="q19" value="C"> 192.168.1.255</label>
+    <label><input type="radio" name="q19" value="D"> 192.168.0.255</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 20 -->
+<div class="question" data-answer="A" id="q20">
+  <div><strong>20.</strong> VPN kısaca nedir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q20" value="A"> İnternet üzerinden şifreli ve güvenli bağlantı sağlayan teknoloji</label>
+    <label><input type="radio" name="q20" value="B"> Sadece kablosuz ağlara verilen isim</label>
+    <label><input type="radio" name="q20" value="C"> Fiziksel kablo türü</label>
+    <label><input type="radio" name="q20" value="D"> Bir IP sınıfı</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 21 -->
+<div class="question" data-answer="C" id="q21">
+  <div><strong>21.</strong> LAN ne anlama gelir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q21" value="A"> Kıta ağı</label>
+    <label><input type="radio" name="q21" value="B"> Dünya çapında ağ</label>
+    <label><input type="radio" name="q21" value="C"> Yerel alan ağı (ev/ofis gibi)</label>
+    <label><input type="radio" name="q21" value="D"> Uydu ağı</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 22 -->
+<div class="question" data-answer="B" id="q22">
+  <div><strong>22.</strong> MAN hangi kapsama alanını tanımlar?</div>
+  <div class="opts">
+    <label><input type="radio" name="q22" value="A"> Ev içi ağ</label>
+    <label><input type="radio" name="q22" value="B"> Şehir/metropolitan seviyesinde ağ</label>
+    <label><input type="radio" name="q22" value="C"> Uluslararası ağ</label>
+    <label><input type="radio" name="q22" value="D"> Başka hiçbir şey</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 23 -->
+<div class="question" data-answer="D" id="q23">
+  <div><strong>23.</strong> WAN genelde hangi ölçek için kullanılır?</div>
+  <div class="opts">
+    <label><input type="radio" name="q23" value="A"> Yalnızca bina içi</label>
+    <label><input type="radio" name="q23" value="B"> Mahalle ölçeği</label>
+    <label><input type="radio" name="q23" value="C"> Sadece aynı şehir</label>
+    <label><input type="radio" name="q23" value="D"> Ülke veya dünya çapında geniş alan</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 24 -->
+<div class="question" data-answer="B" id="q24">
+  <div><strong>24.</strong> 568B standartında ilk tel hangisidir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q24" value="A"> Turuncu</label>
+    <label><input type="radio" name="q24" value="B"> Beyaz/Turuncu</label>
+    <label><input type="radio" name="q24" value="C"> Beyaz/Yeşil</label>
+    <label><input type="radio" name="q24" value="D"> Mavi</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 25 -->
+<div class="question" data-answer="C" id="q25">
+  <div><strong>25.</strong> Ethernet'te MAC adresi hangi katmanda kullanılır?</div>
+  <div class="opts">
+    <label><input type="radio" name="q25" value="A"> Ağ</label>
+    <label><input type="radio" name="q25" value="B"> Taşıma</label>
+    <label><input type="radio" name="q25" value="C"> Veri Bağı (Data Link)</label>
+    <label><input type="radio" name="q25" value="D"> Uygulama</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 26 -->
+<div class="question" data-answer="A" id="q26">
+  <div><strong>26.</strong> Switch, cihazları hangi bilgiye göre hedefler?</div>
+  <div class="opts">
+    <label><input type="radio" name="q26" value="A"> MAC adresine göre</label>
+    <label><input type="radio" name="q26" value="B"> IP adresine göre</label>
+    <label><input type="radio" name="q26" value="C"> Port numarasına göre</label>
+    <label><input type="radio" name="q26" value="D"> DNS adına göre</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 27 -->
+<div class="question" data-answer="B" id="q27">
+  <div><strong>27.</strong> C sınıfı ağda kaç adet kullanılabilir host (teorik maksimum) vardır? (alt ağ maskesi 255.255.255.0 olarak alınsın)</div>
+  <div class="opts">
+    <label><input type="radio" name="q27" value="A"> 128</label>
+    <label><input type="radio" name="q27" value="B"> 254</label>
+    <label><input type="radio" name="q27" value="C"> 65534</label>
+    <label><input type="radio" name="q27" value="D"> 1024</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 28 -->
+<div class="question" data-answer="C" id="q28">
+  <div><strong>28.</strong> "Ağ adresi" 192.168.1.0/24 için hangi adrestir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q28" value="A"> 192.168.1.1</label>
+    <label><input type="radio" name="q28" value="B"> 192.168.1.255</label>
+    <label><input type="radio" name="q28" value="C"> 192.168.1.0</label>
+    <label><input type="radio" name="q28" value="D"> 192.168.0.0</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 29 -->
+<div class="question" data-answer="A" id="q29">
+  <div><strong>29.</strong> Bir hub neden çarpışma (collision) olasılığını artırır?</div>
+  <div class="opts">
+    <label><input type="radio" name="q29" value="A"> Çünkü veriyi tüm portlara aynı anda gönderir</label>
+    <label><input type="radio" name="q29" value="B"> Çünkü paketleri MAC adresine göre yönlendirir</label>
+    <label><input type="radio" name="q29" value="C"> Çünkü her port için ayrı bant genişliği sağlar</label>
+    <label><input type="radio" name="q29" value="D"> Çünkü kabloyu şifreler</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 30 -->
+<div class="question" data-answer="B" id="q30">
+  <div><strong>30.</strong> 568B diziliminde 4. tellerin rengi hangisidir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q30" value="A"> Beyaz/Yeşil</label>
+    <label><input type="radio" name="q30" value="B"> Mavi</label>
+    <label><input type="radio" name="q30" value="C"> Turuncu</label>
+    <label><input type="radio" name="q30" value="D"> Kahverengi</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 31 -->
+<div class="question" data-answer="D" id="q31">
+  <div><strong>31.</strong> Kablolarda PVC kaplama genellikle hangi amaçla kullanılır?</div>
+  <div class="opts">
+    <label><input type="radio" name="q31" value="A"> Sinyal güçlendirmek için</label>
+    <label><input type="radio" name="q31" value="B"> MAC adresini korumak için</label>
+    <label><input type="radio" name="q31" value="C"> IP adresi atamak için</label>
+    <label><input type="radio" name="q31" value="D"> Fiziksel koruma ve izolasyon için</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 32 -->
+<div class="question" data-answer="A" id="q32">
+  <div><strong>32.</strong> Switch yerine hub kullanmanın sonucu genellikle nedir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q32" value="A"> Ağ performansı düşer ve çarpışma artar</label>
+    <label><input type="radio" name="q32" value="B"> Ağ daha güvenli olur</label>
+    <label><input type="radio" name="q32" value="C"> IP adresleri otomatik değişir</label>
+    <label><input type="radio" name="q32" value="D"> DNS çalışmaz</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 33 -->
+<div class="question" data-answer="B" id="q33">
+  <div><strong>33.</strong> Bir switch hangi durumda daha avantajlıdır?</div>
+  <div class="opts">
+    <label><input type="radio" name="q33" value="A"> Çok az cihazın olduğu küçük bir kablo ağı</label>
+    <label><input type="radio" name="q33" value="B"> Aynı anda birçok iletişimin olduğu ağlarda</label>
+    <label><input type="radio" name="q33" value="C"> Sadece analog sinyal iletiminde</label>
+    <label><input type="radio" name="q33" value="D"> Yalnızca fiber kabloda</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 34 -->
+<div class="question" data-answer="C" id="q34">
+  <div><strong>34.</strong> Alt ağ maskesi 255.255.255.0 ağı ifade ederken kaç bit ağ kısmı olduğunu gösterir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q34" value="A"> 8 bit</label>
+    <label><input type="radio" name="q34" value="B"> 16 bit</label>
+    <label><input type="radio" name="q34" value="C"> 24 bit</label>
+    <label><input type="radio" name="q34" value="D"> 32 bit</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 35 -->
+<div class="question" data-answer="A" id="q35">
+  <div><strong>35.</strong> VPN kullanımının sağladığı faytalardan biri aşağıdakilerden hangisidir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q35" value="A"> Uzak ağlara güvenli şifreli erişim sağlamak</label>
+    <label><input type="radio" name="q35" value="B"> İnterneti daha hızlı yapmak</label>
+    <label><input type="radio" name="q35" value="C"> Fiziksel kablo sağlamlık</label>
+    <label><input type="radio" name="q35" value="D"> IP adresini değiştirmez</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 36 -->
+<div class="question" data-answer="B" id="q36">
+  <div><strong>36.</strong> Aşağıdakilerden hangisi IP sınıfı D'ye aittir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q36" value="A"> 192.168.1.1</label>
+    <label><input type="radio" name="q36" value="B"> 230.0.0.1</label>
+    <label><input type="radio" name="q36" value="C"> 10.0.0.1</label>
+    <label><input type="radio" name="q36" value="D"> 200.200.200.200</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 37 -->
+<div class="question" data-answer="C" id="q37">
+  <div><strong>37.</strong> 568B sıralamasında 8. tel hangi renktir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q37" value="A"> Beyaz/Mavi</label>
+    <label><input type="radio" name="q37" value="B"> Beyaz/Yeşil</label>
+    <label><input type="radio" name="q37" value="C"> Kahverengi</label>
+    <label><input type="radio" name="q37" value="D"> Mavi</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 38 -->
+<div class="question" data-answer="A" id="q38">
+  <div><strong>38.</strong> Konnektör terimi genelde neyi ifade eder?</div>
+  <div class="opts">
+    <label><input type="radio" name="q38" value="A"> Kablonun sonuna takılan fiziksel uç (örn. RJ-45)</label>
+    <label><input type="radio" name="q38" value="B"> Bir ağ protokolü</label>
+    <label><input type="radio" name="q38" value="C"> Bir switch markası</label>
+    <label><input type="radio" name="q38" value="D"> IP adresi türü</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 39 -->
+<div class="question" data-answer="B" id="q39">
+  <div><strong>39.</strong> UTP kablonun dış kısmında genelde hangi malzeme kaplama olarak bulunur?</div>
+  <div class="opts">
+    <label><input type="radio" name="q39" value="A"> Kauçuk</label>
+    <label><input type="radio" name="q39" value="B"> PVC</label>
+    <label><input type="radio" name="q39" value="C"> Metal folyo</label>
+    <label><input type="radio" name="q39" value="D"> Cam</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+<!-- 40 -->
+<div class="question" data-answer="D" id="q40">
+  <div><strong>40.</strong> Bir ağda hangi cihaz genellikle MAC adres tablosu tutar ve çerçeveyi hedef porta yönlendirir?</div>
+  <div class="opts">
+    <label><input type="radio" name="q40" value="A"> Hub</label>
+    <label><input type="radio" name="q40" value="B"> Modem</label>
+    <label><input type="radio" name="q40" value="C"> Yönlendirici (Router)</label>
+    <label><input type="radio" name="q40" value="D"> Switch</label>
+    <span class="result"></span>
+  </div>
+</div>
+
+  </form>
+
+  <div class="footer">
+    <button class="btn" onclick="checkAnswers()">Kontrol Et</button>
+    <div class="summary" id="summary" aria-live="polite"></div>
+  </div>
+
+<script>
+function checkAnswers(){
+  const total = 40;
+  let correct = 0;
+  let wrong = 0;
+
+  for(let i=1;i<=total;i++){
+    const q = document.getElementById('q'+i);
+    const correctAns = q.getAttribute('data-answer');
+    const selected = document.querySelector('input[name="q'+i+'"]:checked');
+    const span = q.querySelector('.result');
+    if(selected){
+      if(selected.value === correctAns){
+        span.textContent = 'Doğru';
+        span.classList.remove('wrong');
+        span.classList.add('correct');
+        correct++;
+      } else {
+        span.textContent = 'Yanlış (Doğru: ' + correctAns + ')';
+        span.classList.remove('correct');
+        span.classList.add('wrong');
+        wrong++;
+      }
+    } else {
+      span.textContent = 'Yanıtlanmadı (Doğru: ' + correctAns + ')';
+      span.classList.remove('correct');
+      span.classList.add('wrong');
+      wrong++;
+    }
+  }
+
+  const summary = document.getElementById('summary');
+  summary.innerHTML = '<strong>Sonuç:</strong> Doğru: ' + correct + ' — Yanlış/Boş: ' + wrong + ' (Toplam ' + total + ' soru)';
+  // Scroll to summary
+  summary.scrollIntoView({behavior: 'smooth'});
+}
+</script>
+
+</body>
+</html>
